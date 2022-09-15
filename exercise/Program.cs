@@ -17,6 +17,11 @@ string[] StringArrayGenerator(){
     return array;
 }
 
-
+void PrintArray(string[] array){
+    System.Console.Write('[');
+    System.Console.Write(String.Join(", ", array));
+    System.Console.WriteLine(']');
+}
 
 string[] newArray = StringArrayGenerator();
+PrintArray(newArray);
